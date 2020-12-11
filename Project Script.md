@@ -43,9 +43,9 @@ import json
 ```python
 import spotipy.util as util
 
-username = 'blank'
-client_id ='blank'   
-client_secret = 'blank' 
+username = '1214239161'
+client_id ='dafc9e383ec44154bff6f17297e5cbb6'   
+client_secret = '9378b9e664c44a4ba71ce213c1cf97e2' 
 redirect_uri = 'http://localhost:7777/callback'
 scope = 'user-read-recently-played'
 
@@ -618,22 +618,6 @@ top_one_hundred.describe()
 twenty_twenty['top_100'] = twenty_twenty['name'].isin(top_one_hundred['name'])
 ```
 
-
-```python
-# Plot boxplot (variables only)
-import matplotlib.pyplot as plt
-sns.boxplot(data=twenty_twenty.drop(['Unnamed: 0', 'name', 'key','track_href','analysis_url','uri','id','type','duration_ms','tempo','loudness','time_signature','top_100'], axis=1))
-plt.xlabel('Features')
-plt.ylabel('Value')
-plt.show()
-```
-
-
-    
-![png](output_20_0.png)
-    
-
-
 ### Audio Features According to Spotify's Developer Tools Site 
 ###### duration_ms -	integer	- The duration of the track in milliseconds.
 ###### key - integer	- The estimated overall key of the track. Integers map to pitches using standard Pitch Class notation . E.g. 0 = C, 1 = C♯/D♭, 2 = D, and so on. If no key was detected, the value is -1.
@@ -664,7 +648,7 @@ plt.show()
 
 
     
-![png](output_23_0.png)
+![png](output_22_0.png)
     
 
 
@@ -678,7 +662,7 @@ plt.show()
 
 
     
-![png](output_25_0.png)
+![png](output_24_0.png)
     
 
 
@@ -696,7 +680,7 @@ plt.show()
 
 
     
-![png](output_27_0.png)
+![png](output_26_0.png)
     
 
 
@@ -714,7 +698,7 @@ plt.show()
 
 
     
-![png](output_29_0.png)
+![png](output_28_0.png)
     
 
 
